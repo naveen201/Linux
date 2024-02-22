@@ -1,0 +1,21 @@
+chmod-->change permission of files and directories
+chown-->chnage owner of files and directories
+-------processes------------------------------------------
+ps-->show processes
+ps -aux-->show all processes
+ps -elf-->show all processes by id's
+top-->show all running porcesses
+jobs/ps j -->show all jobs/background 
+tar -czf nk.tar.gz . & -->run a process directly from the background using the ampersand, &
+ctrl+l-->transfer job in background
+fg % jobid-->tranfer job from bg to fg
+---kill running processes----------------------------------
+kill -15 pid -->parent job
+kill -9 pid -->child job
+kill sshd -->by servcie name
+uptime or w -->check cpu load average
+--------------------nice and renice--------------------
+-->-20(H) to +19(L)
+=ex1->nice --5 wget https://wordpress.org/latest.zip
+	->renice -n nice_value  -p pid_of_the_process
+	
