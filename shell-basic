@@ -1,0 +1,13 @@
+exit 0” denotes that the command is successfully executed
+exit 1” (non-zero status) identifies an error in the shell script. It usually occurs when an incorrect argument
+ is passed to the command.
+exit 2”  is another non-zero value that also specifies the error occurrence in the shell script. 
+It generally occurs when the script cannot find the targeted file.
+
+$*" special parameter takes the entire list as one argument with spaces between and the 
+"$@" special parameter takes the entire list and separates it into separate arguments.
+
+-------------------------------------------------
+$@ = stores all the arguments in a list of string
+$* = stores all the arguments as a single string
+$# = stores the number of arguments
